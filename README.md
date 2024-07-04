@@ -2,7 +2,6 @@
 
 This repository serves as a template for creating mini projects using React. It includes a basic setup with React and common CSS libraries, helping you to quickly start building your projects.
 
-
 ## Features
 
 - **React**: A JavaScript library for building user interfaces.
