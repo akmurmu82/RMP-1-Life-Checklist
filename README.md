@@ -67,7 +67,6 @@ The build artifacts will be stored in the `build` directory.
 
 ## Project Structure
 
-
 ```
 react-mini-projects-template/
 │
@@ -100,3 +99,5 @@ You can customize this template according to your needs:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+dulariya, oka kona re menama re dulariya

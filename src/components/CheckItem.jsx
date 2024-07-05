@@ -4,12 +4,14 @@ function CheckItem({ id, text, isChecked, onClick }) {
   return (
     <Flex
       key={id}
-      p={4}
+      p={10}
       borderWidth="1px"
       borderRadius="md"
       bg={isChecked ? "#25d366" : "#fff"}
       alignItems="center"
+      cursor={"pointer"}
       justifyContent="space-between"
+      onClick={onClick}
     >
       <Checkbox
         colorScheme="white"
@@ -17,7 +19,7 @@ function CheckItem({ id, text, isChecked, onClick }) {
         isChecked={isChecked}
         size="lg"
       >
-        <Text>{text}</Text>
+        <Text fontSize={25}>{text}</Text>
       </Checkbox>
     </Flex>
   );
