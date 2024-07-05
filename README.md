@@ -7,7 +7,7 @@ This repository serves as a template for creating mini projects using React. It 
 - **React**: A JavaScript library for building user interfaces.
 - **CSS Libraries**: Easily integrate popular CSS libraries (e.g., Bootstrap, Tailwind CSS).
 - **Project Structure**: Organized structure to keep your code clean and maintainable.
-- **In-built ChakraUI**: This template has in-built ChakraUI.
+- **ChakraUI pre-installed**: This template has ChakraUI pre-installed.
 
 ## Getting Started
 
