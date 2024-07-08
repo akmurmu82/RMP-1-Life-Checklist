@@ -4,27 +4,12 @@ import "./App.css";
 import { Box, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import CheckItem from "./components/CheckItem";
-import { FaCheck } from "react-icons/fa";
-import ProgresBar from "./components/ProgresBar";
+import ProgressBar from "./components/ProgressBar";
+import { ChecklistItems } from "./utils";
 // Fonts
 
 function App() {
-  const [items, setItems] = useState([
-    { id: 1, text: "👶Be born", isChecked: false },
-    { id: 2, text: "🚶Take first step", isChecked: false },
-    { id: 2, text: "🗣️Take first word", isChecked: false },
-    { id: 3, text: "Learn a book", isChecked: false },
-    { id: 6, text: "🤗Make a friend", isChecked: false },
-    { id: 10, text: "🚴‍♀️Learn to ride a bike", isChecked: false },
-    { id: 3, text: "📕Read a book", isChecked: false },
-    { id: 7, text: "🏊Learn to swim", isChecked: false },
-    { id: 11, text: "🏫Finish elementary school", isChecked: false },
-    { id: 4, text: "🏏Play a sport", isChecked: false },
-    { id: 5, text: "Take first steps", isChecked: false },
-    { id: 8, text: "Fly in a plane", isChecked: false },
-    { id: 9, text: "Say first words", isChecked: false },
-    { id: 12, text: "Ride a boat", isChecked: false },
-  ]);
+  const [items, setItems] = useState(ChecklistItems);
 
   const [progress, setProgress] = useState(0);
   const [checkedItems, setCheckedItems] = useState(0);
@@ -86,7 +71,7 @@ function App() {
         <Text fontSize={"2xl"} mb={5}>
           You&apos;ve completed {`${checkedItems}/${items.length}`} items
         </Text>
-        <ProgresBar val={progress} />
+        <ProgressBar val={progress} />
       </Box>
     </Box>
   );
