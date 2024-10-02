@@ -41,7 +41,7 @@ function App() {
         color={"#fff"}
         top={0}
         w={"100%"}
-        p={{base: 1, md: 5}}
+        p={{base: 0, md: 5}}
       >
         <Text ml={20}>RMP</Text>
       </Flex>
